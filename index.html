@@ -8,52 +8,82 @@
     <script src="index.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Smythe&family=Source+Sans+3:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Smythe&family=Source+Sans+3:wght@200&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
-        <h1>Jimmy's Diner</h1>
-        <h2>The best burgers and pizzas in town.</h2>
+        <div class="header-text">
+            <h1 class="restaurant-name">Jimmy's Diner</h1>
+            <h2 class="slogan">The best burgers and pizzas in town.</h2> 
+        </div>
+        
     </header>
 
     <section class="menu-container">
         <div class="menu-items">
+            <!-- pizza -->
             <div class="food-img">🍕</div>
-            
             <div class="food-text">
                 <h3 class="food-name">Pizza</h3>
                 <p class="ingredients">pepperoni, mushroom, mozarella</p>
                 <p class="food-price">$14</p>
             </div>
 
-            <div class="add-item">+</div>
+            <div class="btn-container">
+                <button class="add-item-btn">+</button>
+            </div>
         </div>
-
+        <!-- hamburger -->
         <div class="menu-items">
             <div class="food-img">🍔</div>
-            
             <div class="food-text">
                 <h3 class="food-name">Hamburger</h3>
                 <p class="ingredients">beef, cheese, lettuce</p>
                 <p class="food-price">$12</p>
             </div>
 
-            <div class="add-item">+</div>
+            <div class="btn-container">
+                <button class="add-item-btn">+</button>
+            </div>
         </div>
-
+        <!-- beer -->
         <div class="menu-items">
             <div class="food-img">🍺</div>
-            
             <div class="food-text">
                 <h3 class="food-name">Beer</h3>
                 <p class="ingredients">grain, hops, yeast, water</p>
                 <p class="food-price">$12</p>
             </div>
 
-            <div class="add-item">+</div>
+            <div class="btn-container">
+                <button class="add-item-btn">+</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="order-review">
+        <h2 class="order-title"> Your order</h2>
+        <div class="selected-items">
+            <div class="items">
+                <h3 class="food-name">Pizza</h3>
+                <button class="remove-btn">remove</button>
+                <p class="food-price review-price">$12</p>
+            </div>
+
+            <div class="items">
+                <h3 class="food-name">Pizza</h3>
+                <button class="remove-btn">remove</button>
+                <p class="food-price review-price">$12</p>
+            </div>
+            
+
         </div>
 
-
+        <div class="total-and-pay">
+            <h3 class="total-price">Total Price:</h3>
+            <p class="food-price">$26</p>
+        </div>
+        <button class="complete-btn">Complete order</button>
     </section>
 </body>
 </html>
