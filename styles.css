@@ -56,7 +56,7 @@ body {
 
 .food-img {
     font-size: 4.5rem;
-    opacity: 72%
+    opacity: 60%
 }
 
 .food-text {
@@ -100,22 +100,22 @@ body {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    visibility: hidden;
 }
 
 .order-title {
     font-size: 2.5rem;
 }
 
-.selected-items {
+.receipt {
     display: flex;
     flex-flow: row wrap;
-    height: 40%;
     width: 100%;
-    border-bottom: 2px solid #393333; 
+    border-bottom: 2px solid #393333;
 
 }
 
-.items {
+.purchased {
     width: 100%;
     display: inherit;
     gap: 10px;
@@ -142,7 +142,7 @@ body {
 }
 
 .total-price {
-    font-size: 2rem;
+    font-size: 2.2rem;
 }
 
 .complete-btn {
