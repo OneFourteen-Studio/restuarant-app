@@ -12,6 +12,7 @@ body {
     font-family: 'Smythe', cursive;
     max-width: 375px;
     height: 100vh;
+    position: relative;
 }
 
 .menu-container, .order-review {
@@ -95,12 +96,11 @@ body {
 
 .order-review {
     margin: 0 auto;
-    text-align: center;;
+    text-align: center;
     height: 30%;
-    display: flex;
+    display: none;
     flex-flow: row wrap;
     justify-content: center;
-    visibility: hidden;
 }
 
 .order-title {
@@ -113,6 +113,22 @@ body {
     width: 100%;
     border-bottom: 2px solid #393333;
 
+}
+
+.cart-alert {
+    display: flex;
+    align-items: center;
+    justify-content: center;;
+    height: 60%;
+    width: 100%;
+    opacity: 70%;
+    border-radius: 10px
+}
+
+.cart-alert-text {
+    font-size: 2rem;
+    color: grey;
+    font-style:italic
 }
 
 .purchased {
@@ -135,20 +151,93 @@ body {
     color: #BBBBBB
 }
 
-.total-and-pay {
+.total {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 10px
 }
 
 .total-price {
     font-size: 2.2rem;
 }
 
-.complete-btn {
+.btn{
     width: 100%;
+    height: 50px;
     border: none;
     background: #16DB99;
     color: white;
     padding: 5px;
+    font-weight: bold;
 }
+
+.modal {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 50%;
+    width: 85%;
+    background: white;
+    display: none;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 5.186544418334961px 5.186544418334961px 255.43731689453125px 0px #00000080;
+}
+
+.modal-title {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.6rem;
+}
+
+.card-form {
+    width: 90%;
+    height: 75%;
+}
+
+
+form {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: column nowrap;
+    height: 100%;
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card-input {
+    border: 1.3px solid #757575;
+    border-radius: 4px;
+    width: 100%;
+    height: 17%;
+    color: #757575;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.modal-btn {
+    width: 85%;
+    align-self: center
+}
+
+.message-container {
+    background: #ECFDF5;
+    height: 10%;
+    width: 90%;
+    margin: 0 auto;
+    display: none;
+    justify-content: center;
+    align-items: center
+}
+
+.message {
+    font-size: 2rem;
+    color: #065F46;
+
+}
+
+

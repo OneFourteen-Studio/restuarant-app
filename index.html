@@ -18,7 +18,7 @@
         </div>
         
     </header>
-
+    
     <section class="menu-container" id="menu-container">
        
     </section>
@@ -26,14 +26,30 @@
     <section class="order-review" id="order-review">
         <h2 class="order-title"> Your order</h2>
         <div class="receipt" id="receipt">
-
         </div>
 
-        <div class="total-and-pay">
+        <div class="total">
             <h3 class="total-price">Total Price:</h3>
-            <p class="food-price">$26</p>
+            <p class="food-price" id="total-price"></p>
         </div>
-        <button class="complete-btn">Complete order</button>
+        <button class="btn" data-complete="complete-btn">Complete order</button>
+    </section>
+
+    <section class="modal" id="modal">
+        <h3 class="modal-title">Enter card details</h3>
+        
+        <div class="card-form">
+            <form>
+                <input type="text" placeholder="Enter your name" id="name" class="card-input" required>
+                <input type="text" placeholder="Enter card number" id="card-num" class="card-input" required>
+                <input type="text" placeholder="Enter CVV"  id="cvv-num" class="card-input" required>
+                <button type="button" class="btn modal-btn" data-pay="pay-btn">Pay</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="message-container" id="message-container">
+        <p class="message" id="message"></p>
     </section>
 </body>
 </html>
